@@ -5,7 +5,7 @@ const { vehicleRoute } = require("./routes/vehicle.route");
 const { userRoute } = require("./routes/user.route");
 const { itemRoute } = require("./routes/item.route");
 const { orderRoute } = require("./routes/order.route");
-const {CounterModel}=require("./models/counter.model")
+
 const cors = require("cors");
 
 const app = express();
@@ -23,7 +23,7 @@ app.get("/", async(req, res) => {
 
     res.status(200).json({
       isError: false,
-      message: "Welcome To Delivery Api ....",data
+      message: "Welcome To Delivery Api ...."
     });
   } catch (error) {
     res.status(400).json({
