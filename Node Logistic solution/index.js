@@ -19,8 +19,7 @@ app.use(express.json());
 
 app.get("/", async(req, res) => {
   try {
-    const data=await CounterModel.find()
-
+   
     res.status(200).json({
       isError: false,
       message: "Welcome To Delivery Api ...."
